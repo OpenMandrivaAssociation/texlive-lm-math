@@ -6,7 +6,7 @@
 # catalog-version 1.958
 Name:		texlive-lm-math
 Version:	1.958
-Release:	2
+Release:	3
 Summary:	OpenType maths fonts for Latin Modern
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm-math
