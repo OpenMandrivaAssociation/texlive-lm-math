@@ -1,18 +1,12 @@
-# revision 29044
-# category Package
-# catalog-ctan /fonts/lm-math
-# catalog-date 2013-02-06 18:13:15 +0100
-# catalog-license lppl
-# catalog-version 1.958
 Name:		texlive-lm-math
-Version:	1.959
-Release:	2
+Version:	36915
+Release:	1
 Summary:	OpenType maths fonts for Latin Modern
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm-math
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ family of fonts, in OpenType format. For use with LuaLaTeX or
 XeLaTeX, support is available from the unicode-math package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,7 @@ XeLaTeX, support is available from the unicode-math package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
