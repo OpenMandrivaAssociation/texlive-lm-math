@@ -1,6 +1,6 @@
 Name:		texlive-lm-math
 Version:	36915
-Release:	1
+Release:	2
 Summary:	OpenType maths fonts for Latin Modern
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm-math
