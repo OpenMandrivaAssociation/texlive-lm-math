@@ -3,7 +3,7 @@ Version:	67718
 Release:	1
 Summary:	OpenType maths fonts for Latin Modern
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/lm-math
+URL:		https://www.ctan.org/tex-archive/fonts/lm-math
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm-math.doc.r%{version}.tar.xz
